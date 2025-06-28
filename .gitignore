@@ -1,0 +1,16 @@
+/backend/config.php
+
+/backend/test_db.php
+
+.DS_Store
+Thumbs.test_db
+
+.vscode/
+*.suo
+*.user
+*.sln
+
+*.log
+/logs/
+
+node_modules/
