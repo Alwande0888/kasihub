@@ -1,0 +1,38 @@
+/* 1. Body & Container tweaks */
+body {
+  background-color: #f8f9fa;    /* light gray behind the form */
+}
+.container {
+  max-width: 600px;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* 2. Form field styling */
+.form-label i {
+  color: #4267B2;               /* a touch of brand colour on icons */
+}
+.form-control:focus {
+  border-color: #28a745;        /* match your “success” colour */
+  box-shadow: 0 0 0 0.2rem rgba(40,167,69,.25);
+}
+
+/* 3. Centering & spacing */
+.btn-success {
+  display: block;
+  width: 50%;
+  margin: 2rem auto;
+  font-weight: bold;
+}
+
+/* 4. Responsive tweaks */
+@media (max-width: 576px) {
+  .container {
+    padding: 1rem;
+  }
+  .btn-success {
+    width: 100%;
+  }
+}

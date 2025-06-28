@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Tracking • KasiHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light p-5">
+  <div class="container" style="max-width:500px;">
+    <h2>Update Tracking for Order #<?= $order_id ?></h2>
+    <p><strong>Product:</strong> <?= htmlspecialchars($prod_name, ENT_QUOTES) ?></p>
+    <form method="POST">
+      <div class="mb-3">
+        <label class="form-label">Uber Tracking URL</label>
+        <input 
+          type="url" 
+          name="tracking_url" 
+          class="form-control" 
+          placeholder="https://m.uber.com/..." 
+          value="<?= htmlspecialchars($existing_url, ENT_QUOTES) ?>">
+        <small class="text-muted">Paste the Uber tracking link here (if using Uber).</small>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">PAXI Tracking Code</label>
+        <input 
+          type="text" 
+          name="tracking_code" 
+          class="form-control"
+          placeholder="e.g. PAXI12345"
+          value="<?= htmlspecialchars($existing_code, ENT_QUOTES) ?>">
+        <small class="text-muted">Or enter the PAXI store-to-store code.</small>
+      </div>
+      <button class="btn btn-primary">Save & Notify</button>
+      <a href="dashboard.php" class="btn btn-link">Cancel</a>
+    </form>
+  </div>
+</body>
+</html>

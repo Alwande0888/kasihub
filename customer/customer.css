@@ -1,0 +1,59 @@
+/* ===== Clean Light Styling – Compliments Bootstrap Only ===== */
+
+/* BODY FONT */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* HEADER */
+h1 {
+  font-weight: 600;
+  color: #222;
+}
+
+/* CATEGORY + SORT SELECTS */
+.form-select,
+.form-control {
+  border-radius: 6px;
+}
+
+/* BUTTONS – Bootstrap defaults only */
+.btn-primary,
+.btn-secondary,
+.btn-outline-danger {
+  font-weight: 600;
+}
+
+/* PRODUCT CARDS (using Bootstrap defaults, just smooth the hover) */
+.card {
+  transition: transform 0.15s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+.card-title {
+  font-weight: 600;
+}
+.card-body p {
+  font-size: 0.95rem;
+}
+.card-body .fw-bold {
+  color: #4f2cda;
+  font-weight: 700;
+}
+
+/* CUSTOM SEARCH BUTTON ONLY */
+button[name="search_btn"] {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: white;
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+}
+button[name="search_btn"]:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}

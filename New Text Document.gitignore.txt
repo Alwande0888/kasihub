@@ -1,0 +1,7 @@
+node_modules
+vendor/
+backend/db_connect.php
+backend/config.php
+*.log
+.DS_Store
+Thumbs.db

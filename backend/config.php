@@ -1,0 +1,10 @@
+<?php
+
+
+// Uber API
+define('UBER_TOKEN',     'YOUR_UBER_ACCESS_TOKEN');
+define('UBER_PRODUCT_ID','YOUR_UBER_PRODUCT_ID');
+
+// PAXI API
+define('PAXI_USER',   'YOUR_PAXI_USERNAME');
+define('PAXI_APIKEY', 'YOUR_PAXI_API_KEY');
